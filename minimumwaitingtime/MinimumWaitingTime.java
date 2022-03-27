@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class MinimumWaitingTime implements Service {
+public class MinimumWaitingTime {
 
     public int minimumWaitingTime(int[] queries) {
         // Write your code here.
@@ -34,21 +34,5 @@ public class MinimumWaitingTime implements Service {
         return sum;
     }
 
-    @Override
-    public void execute() {
-        System.out.println("Executing " + MinimumWaitingTime.class);
-
-        MinimumWaitingTime minimumWaitingTime = new MinimumWaitingTime();
-
-        int[] arr = new int[5];
-        arr[0] = 3;
-        arr[1] = 2;
-        arr[2] = 1;
-        arr[3] = 2;
-        arr[4] = 6;
-
-        System.out.println(minimumWaitingTime.minimumWaitingTime(arr));
-
-    }
 }
 
