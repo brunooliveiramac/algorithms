@@ -1,8 +1,4 @@
-import junit.framework.Assert;
-
 import java.util.Arrays;
-
-import static junit.framework.TestCase.assertEquals;
 
 public class MinimumWaitingTime {
 
