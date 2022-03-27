@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class SortedSquaredArray {
 
   public int[] sortedSquaredArray(int[] array) {
         int[] finalArr = new int[array.length];

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class SubSequence {
   public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
 		int arrIndex = 0;
 		int seqIndex = 0;

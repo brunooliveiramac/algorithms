@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class NonConstructibleChange {
 
   public String tournamentWinner(
     ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
