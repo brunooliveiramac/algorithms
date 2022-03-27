@@ -3,11 +3,21 @@ import java.util.*;
 class Program {
 	
 	int lastResult = 0;
-	
-  public static int findClosestValueInBst(BST tree, int target) {
+
+	static class BST {
+		public int value;
+		public BST left;
+		public BST right;
+
+		public BST(int value) {
+			this.value = value;
+		}
+	}
+
+	public static int findClosestValueInBst(BST tree, int target) {
 		return findClosestValueInBst(tree, target, tree.value);
-  }
-	
+	}
+
 	public static int findClosestValueInBst(BST tree, int target, int closest) {
 		if (Math.abs(target - closest) > Math.abs(target - tree.value)) {
 			closest = tree.value;
@@ -25,15 +35,6 @@ class Program {
 	}
 
 
-	
-  static class BST {
-    public int value;
-    public BST left;
-    public BST right;
 
-    public BST(int value) {
-      this.value = value;
-    }
-  }
 }
 
