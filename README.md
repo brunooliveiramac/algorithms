@@ -1,9 +1,10 @@
 # Algorithms
 
-Repository with some algorithms questions solved.
+The purpose of this Repository is to practice solving some algorithms to improve coding skills.
 
-Each folder has its on code and a Description.png with the challenge description.
+Each folder has its on code and a Description.png with the challenge description. you may find solution in Java, Python,
+goLang or any other. The main idea is to learn the foundations.
 
-Also using jUnit to practice TDD.
+You may also use jUnit to practice TDD.
 
 
