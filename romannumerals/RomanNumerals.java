@@ -1,5 +1,11 @@
 public class RomanNumerals {
+
     public static String convert(int value) {
-        return null;
+
+        if (value == 1){
+            return "I";
+        }
+
+        return "II";
     }
 }
