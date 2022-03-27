@@ -1,6 +1,7 @@
 public class BubbleSort {
 
-
+    // O(n^2) time
+    // O(1) space
     public static int[] bubbleSort(int[] array) {
         int next = 0;
         for (int i = 0; i < array.length; i ++) {

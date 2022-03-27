@@ -7,9 +7,9 @@ public class NthFibonacciTest {
     @Test
     public void NonCachedFib(){
 
-        int nthFib = NthFibonacci.getNthFib(6);
+        int nthFib = NthFibonacci.getNthFib(100);
 
-        Assert.assertEquals(5, nthFib);
+        Assert.assertEquals(4181, nthFib);
 
     }
 
