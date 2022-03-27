@@ -3,15 +3,28 @@ public class RomanNumerals {
     public static String convert(int value) {
         String roman = "";
 
-        if (value >= 5){
-            roman += "V";
-            value -= 5;
+        for (Numerals numerals : Numerals.values()){
+            while (value >= numerals.arabic){
+                roman += numerals.roman;
+                value -= numerals.arabic;
+            }
         }
-
-        for (int i = 0; i < value ; i++) {
-            roman += "I";
-        }
-
         return roman;
+    }
+
+    public enum Numerals{
+        TEN(10, "IV"),
+        NINE(9, "IX"),
+        FIVE(5, "V"),
+        FOUR(4, "IV"),
+        ONE(1, "I");
+
+        private final int arabic;
+        private final String roman;
+
+        Numerals(int arabic, String roman1) {
+            this.arabic = arabic;
+            this.roman = roman1;
+        }
     }
 }

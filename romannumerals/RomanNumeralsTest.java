@@ -28,5 +28,16 @@ public class RomanNumeralsTest {
         Assert.assertEquals("VI", RomanNumerals.convert(6));
     }
 
+    @Test
+    public void whenInputIs7ShouldConvertToRomanVII(){
+        Assert.assertEquals("VII", RomanNumerals.convert(7));
+    }
+
+
+    @Test
+    public void whenInputIs4ShouldConvertToRomanIV(){
+        Assert.assertEquals("IV", RomanNumerals.convert(4));
+    }
+
 
 }
