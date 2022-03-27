@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Program {
+class FindClosesValueInBST {
 	
 	int lastResult = 0;
 
