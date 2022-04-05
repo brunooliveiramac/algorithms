@@ -10,8 +10,6 @@ public class RunLengthEncoding {
     public static String runLengthEncoding(String string) {
         char[] chars = string.toCharArray();
 
-        Arrays.sort(chars);
-
         int count = 1;
         String result = "";
         for (int i = 0; i < chars.length; i++) {
