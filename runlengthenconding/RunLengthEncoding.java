@@ -1,10 +1,9 @@
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class RunLengthEncoding {
 
     public static void main(String[] args) {
-        System.out.println(runLengthEncoding("aaaabbcccc"));
+        System.out.println(runLengthEncoding("122333"));
     }
 
 
@@ -19,7 +18,7 @@ public class RunLengthEncoding {
             if (chars.length > i + 1 && chars[i] == chars[i + 1] && count < 9) {
                 count++;
             } else {
-                result += count + "" +  chars[i - 1];
+                result += count + "" +  chars[i];
                 count = 1;
             }
         }
