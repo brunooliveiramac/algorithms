@@ -6,8 +6,9 @@ def bubbleSort(array):
             if array[i] > array[i + 1]:
                 swap(i, i + 1, array)
                 isSorted = False
-
     return array
+
+
 
 def swap(currently, next, array):
     array[currently], array[next] = array[next], array[currently]
