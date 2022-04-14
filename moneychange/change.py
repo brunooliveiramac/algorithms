@@ -7,15 +7,15 @@ def get_change(m):
 
 
 def change(value, count):
-    if (value / 10) > 1:
+    if (value / 10) >= 1:
         count = (value // 10) + count
         result = value % 10
         return change(result, count)
-    if (value / 5) > 1:
+    if (value / 5) >= 1:
         count = (value // 5) + count
         result = value % 5
         return change(result, count)
-    if (value / 1) == value:
+    if value < 5:
         count = (value // 1) + count
         return count
 
