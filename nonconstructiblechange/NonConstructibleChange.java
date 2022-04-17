@@ -2,43 +2,32 @@ import java.util.*;
 
 class NonConstructibleChange {
 
-  public String tournamentWinner(
-    ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
-		
-		//HTML = 6
-	  //Python = 9 ...
-    Map<String,Integer> rank = new HashMap<String,Integer>();
-		
-		for( int i = 0; i < results.size(); i++ )  {
-			if(results.get(i) == 0){
-				ArrayList<String> composition = competitions.get(i);
-				Integer points = rank.get(composition.get(1));
-				if(points == null) {
-					points = 0;
-				}
-				rank.put(composition.get(1), points + 3);
-			} else {
-				ArrayList<String> composition = competitions.get(i);
-				Integer points = rank.get(composition.get(0));
-				if(points == null) {
-					points = 0;
-				}
-				rank.put(composition.get(0), points + 3);
-			}
+
+	public int nonConstructibleChange(int[] coins) {
+
+		if(coins.length == 0){
+			return 1;
 		}
-		
-		Map.Entry<String, Integer> maxEntry = null;
-		
-		
-		String result = "";
-		for (Map.Entry<String, Integer> entry : rank.entrySet()) {
-    	if(maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0) {
-				maxEntry = entry;
-				result = entry.getKey();
+
+		Arrays.sort(coins);
+		// 1, 1, 2, 3, 5, 7, 22
+
+		int sum = 0;
+		int changeThatCannotBeCreated = 0		;
+
+		for (int i = 0; i < coins.length; i++){
+			changeThatCannotBeCreated = sum + 1;
+			if (changeThatCannotBeCreated < coins[i]){
+				return changeThatCannotBeCreated;
 			}
-		}	
-		
-		return result;
-  }
+			sum += coins[i];
+			if (coins.length == i + 1){
+				return changeThatCannotBeCreated + coins[i];
+			}
+			changeThatCannotBeCreated = 0;
+		}
+
+		return -1;
+	}
 }
 
