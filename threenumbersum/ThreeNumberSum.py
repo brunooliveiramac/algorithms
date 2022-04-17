@@ -1,3 +1,4 @@
+# O(n²) time | O(n) space
 def threeNumberSum(array, target_sum):
     array.sort()
     array_to_return = []
