@@ -3,7 +3,7 @@ public class InsertionSorting {
     public static int[] insertionSort(int[] array) {
         int count = 0;
         while ( count < array.length ) {
-            // Looping Backwards
+            // Looping Backwards from the "supposed" already sorted part
             for (int i = count + 1; i > 0; i--){
                 if (i <= array.length -1) {
                     int last = array[i];
