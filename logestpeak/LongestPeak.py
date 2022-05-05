@@ -1,34 +1,27 @@
 def longestPeak(array):
-    walkPeak = 0
     longest = 0
-    foundPeak = False
-    for position in range(1, len(array) - 1):
+    i = 1
 
-        if array[position] < array[position + 1]:
-            walkPeak += 1
+    while i < len(array) - 1:
+        isPeak = array[i - 1] < array[i] > array[i + 1]
+
+        if not isPeak:
+            i += 1
             continue
 
-        if array[position + 1] < array[position] > array[position - 1]:
-            foundPeak = True
+        leftIndex = i - 2
+        while leftIndex >= 0 and array[leftIndex] < array[leftIndex + 1]:
+            leftIndex -= 1
 
-            walkPeak += 3
+        rightIndex = i + 2
+        while rightIndex < len(array) and array[rightIndex] < array[rightIndex - 1]:
+            rightIndex += 1
 
-            if walkPeak > longest:
-                longest = walkPeak
-
-            walkPeak = 3
-
-            continue
-
-        if foundPeak:
-            if array[position + 1] <= array[position]:
-                walkPeak += 1
-
-    if walkPeak > longest:
-        longest = walkPeak
+        current = rightIndex - leftIndex - 1
+        longest = max(longest, current)
+        i = rightIndex
 
     return longest
-
 
 if __name__ == '__main__':
     print(longestPeak([5, 4, 3, 2, 1, 2, 10, 12, -3, 5, 6, 7, 10]))
