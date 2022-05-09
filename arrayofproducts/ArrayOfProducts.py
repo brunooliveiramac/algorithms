@@ -1,6 +1,12 @@
 def arrayOfProducts(array):
-    # Write your code here.
-    pass
+    toReturn = []
+    for i in range(len(array)):
+        aux = 1
+        for j in range(len(array)):
+            if j != i:
+                aux *= array[j]
+        toReturn.append(aux)
+    return toReturn
 
 
 if __name__ == '__main__':
