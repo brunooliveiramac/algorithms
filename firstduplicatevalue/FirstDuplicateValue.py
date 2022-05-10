@@ -1,12 +1,12 @@
 def firstDuplicateValue(array):
-    for i in range(len(array)):
-        for j in range(len(array)):
-            if i != j:
-                if array[i] == array[j]:
-                    return array[i]
+    my_dict = dict()
 
+    for i in range(len(array)):
+        if array[i] in my_dict:
+            return array[i]
+        my_dict[array[i]] = array[i]
     return -1
 
 
 if __name__ == '__main__':
-    print(firstDuplicateValue([2, 1, 5, 2, 3, 3, 4])) # 2
+    print(firstDuplicateValue([3, 1, 3, 1, 1, 4, 4]))  # 2
