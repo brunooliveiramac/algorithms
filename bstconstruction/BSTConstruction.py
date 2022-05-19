@@ -98,7 +98,6 @@ if __name__ == '__main__':
 
     a.insert(5)
 
-    print(f.left.value)
     print(f.right.value)
 
     a.remove(12)
