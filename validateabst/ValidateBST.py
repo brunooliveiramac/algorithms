@@ -6,25 +6,23 @@ class BST:
         self.right = None
 
 
-def validateBstHelper(tree, bools, parent=None):
+def validateBstHelper(tree, bools, min=None, max=None):
+    if tree.value < min  or tree.value >= max:
+        bools.append(False)
     if tree.right is not None:
-        if tree.value > tree.right.value:
-            bools.append(False)
-        if parent is not None and parent.left == tree:
-            if tree.right.value >= parent.value:
-                bools.append(False)
-        validateBstHelper(tree.right, bools, tree)
+        validateBstHelper(tree.right, bools, tree.value, max)
     if tree.left is not None:
-        if tree.value < tree.left.value:
-            bools.append(False)
-        validateBstHelper(tree.left, bools, tree)
-    bools.append(True)
+        validateBstHelper(tree.left, bools, min, tree.value)
+
+
+
 
 
 def validateBst(tree):
     bools = []
-    validateBstHelper(tree, bools)
+    validateBstHelper(tree, bools, float("-inf"), float("inf"))
     return False not in bools
+
 
 
 if __name__ == '__main__':
