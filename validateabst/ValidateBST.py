@@ -7,7 +7,7 @@ class BST:
 
 
 def validateBstHelper(tree, bools, min=None, max=None):
-    if tree.value < min  or tree.value >= max:
+    if tree.value < min or tree.value >= max:
         bools.append(False)
     if tree.right is not None:
         validateBstHelper(tree.right, bools, tree.value, max)
@@ -27,20 +27,19 @@ def validateBst(tree):
 
 if __name__ == '__main__':
     a = BST(10)
-    b = BST(15)
-    c = BST(22)
+    b = BST(9)
+    c = BST(9)
     d = BST(5)
-    e = BST(5)
-    f = BST(11)
-    g = BST(2)
-    h = BST(1)
+    e = BST(15)
+    f = BST(13)
+    g = BST(22)
+    h = BST(10)
 
-    a.left = d
-    a.right = b
+    a.right = e
+    a.left = b
+    b.left = d
     b.right = c
-    d.left = g
-    d.right = e
-    e.right = f
-    g.left = h
-
+    e.right = g
+    e.left = f
+    d.right = h
     print(validateBst(a))
