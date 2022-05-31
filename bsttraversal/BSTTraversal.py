@@ -13,7 +13,7 @@ def inOrderTraverse(tree, array):
 
     if tree.right is not None:
         inOrderTraverse(tree.right, array)
-    pass
+    return array
 
 
 def preOrderTraverse(tree, array):
@@ -22,9 +22,9 @@ def preOrderTraverse(tree, array):
     if tree.left is not None:
         preOrderTraverse(tree.left, array)
     if tree.right is not None:
-        inOrderTraverse(tree.right, array)
+        preOrderTraverse(tree.right, array)
 
-    pass
+    return array
 
 
 def postOrderTraverse(tree, array):
@@ -35,7 +35,7 @@ def postOrderTraverse(tree, array):
 
     if tree is not None:
         array.append(tree.value)
-    pass
+    return
 
 
 if __name__ == '__main__':
