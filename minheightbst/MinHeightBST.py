@@ -4,23 +4,28 @@ def minHeightBst(array):
     middle = (left + right) // 2
     bst = BST(array[middle])
 
-    minHeightBstHelper(left, middle, array, bst, None)
+    dict = {middle: array[middle]}
 
-    minHeightBstHelper(middle, right, array, bst, None)
+    minHeightBstHelper(left, middle - 1, array, bst, dict)
+
+    minHeightBstHelper(middle + 1, right, array, bst, dict)
     return bst
 
-def minHeightBstHelper(left, right, array, bst, last_mid):
 
+def minHeightBstHelper(left, right, array, bst, dict):
     middle = (left + right) // 2
 
-    if last_mid is not None and middle == last_mid:
+    value = array[middle]
+
+    if middle not in dict:
+        bst.insert(value)
+        dict[middle] = value
+    else:
         return
 
-    bst.insert(array[middle])
+    minHeightBstHelper(left, middle, array, bst, dict)
 
-    minHeightBstHelper(left, middle, array, bst, middle)
-
-    minHeightBstHelper(middle, right, array, bst, middle)
+    minHeightBstHelper(middle + 1, right, array, bst, dict)
 
 
 class BST:
