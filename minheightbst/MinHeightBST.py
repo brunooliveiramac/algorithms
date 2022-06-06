@@ -6,24 +6,25 @@ def minHeightBst(array):
 
     dict = {middle: array[middle]}
 
-    minHeightBstHelper(left, middle - 1, array, bst, dict)
+    minHeightBstHelper(left, right, array, bst, dict)
 
-    minHeightBstHelper(middle + 1, right, array, bst, dict)
     return bst
 
 
 def minHeightBstHelper(left, right, array, bst, dict):
     middle = (left + right) // 2
 
+    if right < left:
+        return
+
     value = array[middle]
 
     if middle not in dict:
         bst.insert(value)
         dict[middle] = value
-    else:
-        return
 
-    minHeightBstHelper(left, middle, array, bst, dict)
+
+    minHeightBstHelper(left, middle - 1, array, bst, dict)
 
     minHeightBstHelper(middle + 1, right, array, bst, dict)
 
