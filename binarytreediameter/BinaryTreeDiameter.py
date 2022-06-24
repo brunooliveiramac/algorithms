@@ -6,9 +6,27 @@ class BinaryTree:
         self.right = right
 
 
+def binaryTreeDiameterHelper(tree, count, arr):
+    if tree.left is not None:
+        count += 1
+        binaryTreeDiameterHelper(tree.left, count, arr)
+
+    if tree.right is not None:
+        count += 1
+        binaryTreeDiameterHelper(tree.right, count, arr)
+
+    else:
+        arr.append(count)
+        count = 0
+
+    return arr, count
+
+
 def binaryTreeDiameter(tree):
-    # Write your code here.
-    return -1
+    count = 0
+    arr = []
+    arr, count = binaryTreeDiameterHelper(tree, count, arr)
+    return max(arr)
 
 
 if __name__ == '__main__':
@@ -33,3 +51,5 @@ if __name__ == '__main__':
     d.right = e
     e.right = f
 
+    result = binaryTreeDiameter(a)
+    print(result)
