@@ -6,18 +6,34 @@ class BinaryTree:
         self.right = right
 
 
-def binaryTreeDiameterHelper(tree, count, arr):
+def left(tree, count):
     if tree.left is not None:
         count += 1
-        binaryTreeDiameterHelper(tree.left, count, arr)
+        return left(tree.left, count)
+    return count
 
+
+def right(tree, count):
     if tree.right is not None:
         count += 1
-        binaryTreeDiameterHelper(tree.right, count, arr)
+        return right(tree.right, count)
+    return count
 
-    else:
-        arr.append(count)
-        count = 0
+
+def binaryTreeDiameterHelper(tree, count, arr):
+    leftResult = 0
+    rightResult = 0
+    if tree is not None:
+        if tree.left is not None:
+            leftResult = left(tree, count)
+
+        if tree.right is not None:
+            rightResult = right(tree, count)
+
+        arr.append(leftResult + rightResult)
+
+        binaryTreeDiameterHelper(tree.left, count, arr)
+        binaryTreeDiameterHelper(tree.right, count, arr)
 
     return arr, count
 
