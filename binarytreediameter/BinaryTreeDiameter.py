@@ -46,26 +46,36 @@ def binaryTreeDiameter(tree):
 
 
 if __name__ == '__main__':
-    a = BinaryTree(1)
-    b = BinaryTree(2)
-    c = BinaryTree(3)
-    d = BinaryTree(4)
-    e = BinaryTree(5)
-    f = BinaryTree(6)
-    g = BinaryTree(7)
-    h = BinaryTree(8)
-    i = BinaryTree(9)
+    # a = BinaryTree(1)
+    # b = BinaryTree(2)
+    # c = BinaryTree(3)
+    # d = BinaryTree(4)
+    # e = BinaryTree(5)
+    # f = BinaryTree(6)
+    # g = BinaryTree(7)
+    # h = BinaryTree(8)
+    # i = BinaryTree(9)
+    #
+    # a.left = c
+    # a.right = b
+    #
+    # c.left = g
+    # g.left = h
+    # h.left = i
+    #
+    # c.right = d
+    # d.right = e
+    # e.right = f
 
-    a.left = c
+
+    a = BinaryTree(3)
+    b = BinaryTree(10)
+    c = BinaryTree(1)
+
     a.right = b
 
-    c.left = g
-    g.left = h
-    h.left = i
+    b.left = c
 
-    c.right = d
-    d.right = e
-    e.right = f
 
     result = binaryTreeDiameter(a)
     print(result)
