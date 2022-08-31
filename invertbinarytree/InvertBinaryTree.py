@@ -1,18 +1,9 @@
 def invertBinaryTree(tree):
-    left = None
-    right = None
+    if tree is None:
+        invertBinaryTree(tree.left)
+        invertBinaryTree(tree.right)
 
-    if tree is not None:
-        if tree.left is not None:
-            left = tree.left
-            invertBinaryTree(tree.left)
-        if tree.right is not None:
-            right = tree.right
-            invertBinaryTree(tree.right)
-
-        tree.left = right
-        tree.right = left
-
+        tree.left, tree.right = tree.right, tree.left
 
 # This is the class of the input binary tree.
 class BinaryTree:
