@@ -6,27 +6,31 @@ class BinaryTree:
         self.parent = parent
 
 
-def inOrderTraverse(tree, map):
+def inOrderTraverse(tree, arr):
     if tree.left is not None:
-        inOrderTraverse(tree.left, map)
+        inOrderTraverse(tree.left, arr)
 
-    map[tree.value] = tree
+    arr.append(tree)
 
     if tree.right is not None:
-        inOrderTraverse(tree.right, map)
+        inOrderTraverse(tree.right, arr)
 
-    return map
+    return arr
 
 
 def findSuccessor(tree, node):
-    map = {}
-    inOrderTraverse(tree, map)
-    element = map[node.value]
+    arr = []
+    inOrderTraverse(tree, arr)
 
-    if element.left is None and element.right is None:
-        return element.parent.parent
+    for idx, currentNode in enumerate(arr):
+        if currentNode != node:
+            continue
 
-    return None
+        if idx == len(arr) - 1:
+            return None
+
+        return arr[idx + 1]
+
 
 
 if __name__ == '__main__':
@@ -54,6 +58,5 @@ if __name__ == '__main__':
     f.parent = d
 
 
-    print(findSuccessor(a, e))
-    #arr = []
-    #print(inOrderTraverse(a, arr))
+    print(findSuccessor(a, e).value)
+
