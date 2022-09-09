@@ -8,9 +8,6 @@ type BinaryTree struct {
 }
 
 func HeightBalancedBinaryTree(tree *BinaryTree) bool {
-	if tree == nil {
-		return false
-	}
 
 	if tree.Left != nil && tree.Right != nil {
 		result := tree.Right.Value - tree.Left.Value
@@ -18,8 +15,14 @@ func HeightBalancedBinaryTree(tree *BinaryTree) bool {
 			return false
 		}
 	}
-	HeightBalancedBinaryTree(tree.Left)
-	HeightBalancedBinaryTree(tree.Right)
+	if tree != nil {
+		if tree.Left != nil {
+			HeightBalancedBinaryTree(tree.Left)
+		}
+		if tree.Right != nil {
+			HeightBalancedBinaryTree(tree.Right)
+		}
+	}
 
 	return true
 }
