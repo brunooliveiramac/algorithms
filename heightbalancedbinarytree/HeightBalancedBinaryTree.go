@@ -1,5 +1,7 @@
 package main
 
+import "math"
+
 type BinaryTree struct {
 	Value int
 
@@ -7,22 +9,25 @@ type BinaryTree struct {
 	Right *BinaryTree
 }
 
-func HeightBalancedBinaryTree(tree *BinaryTree) bool {
+func HeightBalancedBinaryTreeHelper(tree *BinaryTree, balanced *[1]bool) float64 {
+	if tree == nil {
+		return 0
+	}
+	leftHeight := HeightBalancedBinaryTreeHelper(tree.Left, balanced)
+	rightHeight := HeightBalancedBinaryTreeHelper(tree.Right, balanced)
 
-	if tree.Left != nil && tree.Right != nil {
-		result := tree.Right.Value - tree.Left.Value
-		if result != 1 {
-			return false
-		}
+	if math.Abs(leftHeight-rightHeight) > 1 {
+		balanced[0] = false
 	}
-	if tree != nil {
-		if tree.Left != nil {
-			HeightBalancedBinaryTree(tree.Left)
-		}
-		if tree.Right != nil {
-			HeightBalancedBinaryTree(tree.Right)
-		}
-	}
+	height := math.Max(leftHeight, rightHeight) + 1
+	return height
+}
+
+func HeightBalancedBinaryTree(tree *BinaryTree) bool {
+	var balanced [1]bool
+	balanced[0] = true
+	HeightBalancedBinaryTreeHelper(tree, &balanced)
+	return balanced[0]
 
 	return true
 }
@@ -69,7 +74,6 @@ func main() {
 		Left:  &a,
 		Right: &b,
 	}
-
 
 	print(HeightBalancedBinaryTree(&root))
 }
