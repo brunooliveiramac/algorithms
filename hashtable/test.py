@@ -1,5 +1,5 @@
 from hashtable import HashTable
-
+#https://stephenagrice.medium.com/how-to-implement-a-hash-table-in-python-1eb6c55019fd
 if __name__ == '__main__':
     ht = HashTable()
     ht.insert('thor', 'good of thunder')
@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
 
 
-    #         Bucket 1          |       Bucket 2
+    #         Bucket 1          |       Bucket 2   |
     #   thor -> good of thunder
     #   thor -> Odinson
     #

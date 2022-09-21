@@ -1,0 +1,5 @@
+def maxSubsetSumNoAdjacent(array):
+
+
+
+    pass
