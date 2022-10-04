@@ -4,9 +4,12 @@ def maxSubsetSumNoAdjacent(array):
     elif len(array) == 1:
         return array[0]
     aux_arr = array[:]
+    print(aux_arr)
     aux_arr[1] = max(array[0], array[1])
     for index in range(2, len(array)):
         aux_arr[index] = max(aux_arr[index - 1], aux_arr[index - 2] + aux_arr[index])
+        print(aux_arr)
+    print(aux_arr)
     return max(aux_arr)
 
 
