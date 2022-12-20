@@ -1,14 +1,12 @@
 def numberOfWaysToMakeChange(n, denoms):
-    ways = []
+    ways = [1] + [0 for _ in range(n)]
 
-    for i in range(n):
-        ways.append(i)
+    for idx, d in enumerate(denoms):
+        for change in range(d, n + 1):
+            if d <= change:
+                ways[change] += ways[change - d]
 
-    for i in range(len(denoms)):
-        if denoms[i] <= ways[i]:
-            ways[i] = ways[i] + ways[i - 1]
-    return ways
-
+    return ways[-1]
 
 if __name__ == '__main__':
     print(numberOfWaysToMakeChange(6, [1, 5]))
