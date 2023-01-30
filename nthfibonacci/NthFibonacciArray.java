@@ -1,3 +1,4 @@
+//Tabulation
 public class NthFibonacciArray {
 
     //0
@@ -5,6 +6,7 @@ public class NthFibonacciArray {
     //1
     //2
     //3
+    // O(n) time | O(n) space
     static int[] fib(int n) {
         int[] fibArr = new int[n];
         if (n == 0){
