@@ -1,13 +1,16 @@
-def minNumberOfCoinsForChange(money, coins):
+def minNumberOfCoinsForChange(n, denoms):
 
-    arr = [0 for i in range(money + 1)]
+    numOfCoins = [float("inf") for amount in range(n + 1)]
 
-    for selected_money in range(1, money + 1):
-        for selected_coin in coins:
-            if selected_coin <= selected_money:
-                arr[selected_money] = selected_coin + arr[selected_money - 1]
+    numOfCoins[0] = 0
 
-    return arr
+    for denom in denoms:
+        for amount in range(len(numOfCoins)):
+            if denom <= amount:
+                numOfCoins[amount] = min(numOfCoins[amount], 1 + numOfCoins[amount - denom])
+
+
+    return numOfCoins[n] if numOfCoins[n] != float("inf") else -1
 
 
 
