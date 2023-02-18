@@ -1,3 +1,5 @@
+# https://youtu.be/H9bfqozjoqs?t=426
+
 def minNumberOfCoinsForChange(n, denoms):
 
     numOfCoins = [float("inf") for amount in range(n + 1)]
