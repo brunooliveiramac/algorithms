@@ -68,6 +68,7 @@ func (c *Client) AllowRequest(clientIP, token string) bool {
 		if err != nil || tokenCount > limitToken {
 			return false
 		}
+		return true
 	}
 	// Check and apply IP-specific rate limiting
 	ipCount, err := c.store.IncrementWithExpiry(ctx, ipIdentifier, blockTimeIp)
