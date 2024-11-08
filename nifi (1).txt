@@ -1,0 +1,392 @@
+Waiting for host to be reachable
+failed to reach event-ingestion-1-node.event-ingestion-headless.nifi.svc.cluster.local:8080
+Found: , expecting: 10.223.2.11
+Found : 10.223.2.11
+Ip match for 10.223.2.11
+Hostname is successfully binded withy IP address
+
+Java home: /opt/java/openjdk
+NiFi home: /opt/nifi/nifi-current
+
+Bootstrap Config File: /opt/nifi/nifi-current/conf/bootstrap.conf
+
+02:38:58,639 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.3.6
+02:38:58,665 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+02:38:58,666 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/opt/nifi/nifi-current/conf/logback.xml]
+02:38:58,885 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1710815938885)
+02:38:58,887 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Will scan for changes in [file:/opt/nifi/nifi-current/conf/logback.xml]
+02:38:58,887 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Setting ReconfigureOnChangeTask scanning period to 30 seconds
+02:38:58,890 |-WARN in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - ch.qos.logback.core.hook.DelayingShutdownHook was renamed as ch.qos.logback.core.hook.DefaultShutdownHook
+02:38:58,890 |-WARN in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Please use the new class name
+02:38:58,890 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+02:38:58,890 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Registering shutdown hook with JVM runtime.
+02:38:58,891 |-INFO in ch.qos.logback.classic.model.processor.LoggerContextListenerModelHandler - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+02:38:58,911 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+02:38:58,911 |-INFO in ch.qos.logback.classic.model.processor.LoggerContextListenerModelHandler - Starting LoggerContextListener
+02:38:58,913 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [APP_FILE]
+02:38:58,913 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:38:58,927 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@937773018 - Archive files will be limited to [100 MB] each.
+02:38:58,950 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@937773018 - No compression will be used
+02:38:58,951 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@937773018 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-app_%d{yyyy-MM-dd_HH}.%i.log for the active file
+02:38:58,976 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b6856dd - The date pattern is 'yyyy-MM-dd_HH' from file name pattern '/opt/nifi/nifi-current/logs/nifi-app_%d{yyyy-MM-dd_HH}.%i.log'.
+02:38:58,976 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b6856dd - Roll-over at the top of every hour.
+02:38:58,979 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2b6856dd - Setting initial period to 2024-03-19T02:34:18.936Z
+02:38:58,995 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[APP_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-app.log
+02:38:58,995 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[APP_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-app.log]
+02:38:58,996 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [USER_FILE]
+02:38:58,996 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:38:58,997 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1572098393 - No compression will be used
+02:38:58,997 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1572098393 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-user_%d.log for the active file
+02:38:58,997 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-user_%d.log'.
+02:38:58,997 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+02:38:58,998 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:34:15.635Z
+02:38:58,999 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[USER_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-user.log
+02:38:58,999 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[USER_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-user.log]
+02:38:58,999 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [REQUEST_FILE]
+02:38:58,999 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:38:58,999 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1627857534 - No compression will be used
+02:38:58,999 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1627857534 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-request_%d.log for the active file
+02:38:59,000 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-request_%d.log'.
+02:38:59,000 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+02:38:59,000 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:34:15.679Z
+02:38:59,001 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-request.log
+02:38:59,001 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-request.log]
+02:38:59,001 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [BOOTSTRAP_FILE]
+02:38:59,001 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:38:59,001 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2084663827 - No compression will be used
+02:38:59,001 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2084663827 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-bootstrap_%d.log for the active file
+02:38:59,002 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-bootstrap_%d.log'.
+02:38:59,002 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+02:38:59,002 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:34:28.683Z
+02:38:59,002 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[BOOTSTRAP_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-bootstrap.log
+02:38:59,002 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[BOOTSTRAP_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-bootstrap.log]
+02:38:59,002 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [DEPRECATION_FILE]
+02:38:59,002 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+02:38:59,003 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@360062456 - setting totalSizeCap to 100 MB
+02:38:59,003 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@360062456 - Archive files will be limited to [10 MB] each.
+02:38:59,003 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@360062456 - No compression will be used
+02:38:59,003 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@360062456 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-deprecation_%d.%i.log for the active file
+02:38:59,004 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6ab7a896 - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-deprecation_%d.%i.log'.
+02:38:59,004 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6ab7a896 - Roll-over at midnight.
+02:38:59,004 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6ab7a896 - Setting initial period to 2024-03-15T22:20:33.914Z
+02:38:59,005 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[DEPRECATION_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-deprecation.log
+02:38:59,005 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[DEPRECATION_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-deprecation.log]
+02:38:59,005 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+02:38:59,005 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+02:38:59,007 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [deprecation] to WARN
+02:38:59,007 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[deprecation] onto the JUL framework
+02:38:59,007 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [deprecation] to false
+02:38:59,007 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [DEPRECATION_FILE] to Logger[deprecation]
+02:38:59,008 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi] to INFO
+02:38:59,008 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi] onto the JUL framework
+02:38:59,008 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors] to WARN
+02:38:59,008 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[org.apache.nifi.processors] onto the JUL framework
+02:38:59,009 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors.standard.LogAttribute] to INFO
+02:38:59,009 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.processors.standard.LogAttribute] onto the JUL framework
+02:38:59,009 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors.standard.LogMessage] to INFO
+02:38:59,009 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.processors.standard.LogMessage] onto the JUL framework
+02:38:59,009 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.controller.repository.StandardProcessSession] to WARN
+02:38:59,009 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[org.apache.nifi.controller.repository.StandardProcessSession] onto the JUL framework
+02:38:59,009 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.ClientCnxn] to ERROR
+02:38:59,009 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.ClientCnxn] onto the JUL framework
+02:38:59,009 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NIOServerCnxn] to ERROR
+02:38:59,009 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.server.NIOServerCnxn] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NIOServerCnxnFactory] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.server.NIOServerCnxnFactory] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NettyServerCnxnFactory] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.server.NettyServerCnxnFactory] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.quorum] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.server.quorum] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.ZooKeeper] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.ZooKeeper] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.PrepRequestProcessor] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.zookeeper.server.PrepRequestProcessor] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.controller.reporting.LogComponentStatuses] to ERROR
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.nifi.controller.reporting.LogComponentStatuses] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.calcite.runtime.CalciteException] to OFF
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating OFF level on Logger[org.apache.calcite.runtime.CalciteException] onto the JUL framework
+02:38:59,010 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.curator.framework.recipes.leader.LeaderSelector] to OFF
+02:38:59,010 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating OFF level on Logger[org.apache.curator.framework.recipes.leader.LeaderSelector] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.curator.ConnectionState] to OFF
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating OFF level on Logger[org.apache.curator.ConnectionState] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.cluster] to INFO
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.cluster] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.server.JettyServer] to INFO
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.server.JettyServer] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty] to INFO
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.eclipse.jetty] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to ERROR
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.springframework] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to INFO
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.springframework.security] onto the JUL framework
+02:38:59,011 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.glassfish.jersey.internal.Errors] to ERROR
+02:38:59,011 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.glassfish.jersey.internal.Errors] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.annotations.AnnotationParser] to ERROR
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.eclipse.jetty.annotations.AnnotationParser] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [net.schmizz.sshj] to WARN
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[net.schmizz.sshj] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.hierynomus.sshj] to WARN
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[com.hierynomus.sshj] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.hierynomus.smbj] to WARN
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[com.hierynomus.smbj] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.amazonaws.services.kinesis] to WARN
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[com.amazonaws.services.kinesis] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.atlas] to WARN
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[org.apache.atlas] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.security.requests] to INFO
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.web.security.requests] onto the JUL framework
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.security.requests] to false
+02:38:59,012 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [APP_FILE] to Logger[org.apache.nifi.web.security.requests]
+02:38:59,012 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.security] to INFO
+02:38:59,012 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.web.security] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.security] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.security]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.api.config] to INFO
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.web.api.config] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.api.config] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.api.config]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.authorization] to INFO
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.authorization] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.authorization] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.authorization]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.cluster.authorization] to INFO
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.cluster.authorization] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.cluster.authorization] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.cluster.authorization]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.api.AccessResource] to INFO
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.web.api.AccessResource] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.api.AccessResource] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.api.AccessResource]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.opensaml] to WARN
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating WARN level on Logger[org.opensaml] onto the JUL framework
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.opensaml] to false
+02:38:59,013 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.opensaml]
+02:38:59,013 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.server.RequestLog] to INFO
+02:38:59,013 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.web.server.RequestLog] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.server.RequestLog] to false
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [REQUEST_FILE] to Logger[org.apache.nifi.web.server.RequestLog]
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.bootstrap] to INFO
+02:38:59,014 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.bootstrap] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.bootstrap] to false
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.bootstrap]
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.bootstrap]
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.bootstrap.Command] to INFO
+02:38:59,014 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.bootstrap.Command] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.bootstrap.Command] to false
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.bootstrap.Command]
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.bootstrap.Command]
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.StdOut] to INFO
+02:38:59,014 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[org.apache.nifi.StdOut] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.StdOut] to false
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.StdOut]
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.StdOut]
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.StdErr] to ERROR
+02:38:59,014 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating ERROR level on Logger[org.apache.nifi.StdErr] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.StdErr] to false
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.StdErr]
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.StdErr]
+02:38:59,014 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+02:38:59,014 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3e3047e6 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+02:38:59,014 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [APP_FILE] to Logger[ROOT]
+02:38:59,015 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@327b636c - End of configuration.
+02:38:59,015 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@45dd4eda - Registering current configuration as safe fallback point
+
+2024-03-19 02:38:59,042 INFO [main] o.a.n.b.NotificationServiceManager Successfully loaded the following 0 services: []
+2024-03-19 02:38:59,116 INFO [main] org.apache.nifi.bootstrap.RunNiFi Registered no Notification Services for Notification Type NIFI_STARTED
+2024-03-19 02:38:59,117 INFO [main] org.apache.nifi.bootstrap.RunNiFi Registered no Notification Services for Notification Type NIFI_STOPPED
+2024-03-19 02:38:59,117 INFO [main] org.apache.nifi.bootstrap.RunNiFi Registered no Notification Services for Notification Type NIFI_DIED
+2024-03-19 02:38:59,121 INFO [main] org.apache.nifi.bootstrap.RunNiFi Runtime Java version: 11.0.19
+2024-03-19 02:38:59,207 INFO [main] org.apache.nifi.bootstrap.Command Starting Apache NiFi...
+2024-03-19 02:38:59,208 INFO [main] org.apache.nifi.bootstrap.Command Working Directory: /opt/nifi/nifi-current
+2024-03-19 02:38:59,208 INFO [main] org.apache.nifi.bootstrap.Command Command: /opt/java/openjdk/bin/java -classpath /opt/nifi/nifi-current/./conf:/opt/nifi/nifi-current/./lib/nifi-property-utils-1.22.0.jar:/opt/nifi/nifi-current/./lib/logback-classic-1.3.6.jar:/opt/nifi/nifi-current/./lib/nifi-server-api-1.22.0.jar:/opt/nifi/nifi-current/./lib/jetty-schemas-5.2.jar:/opt/nifi/nifi-current/./lib/javax.servlet-api-3.1.0.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-api-1.22.0.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-bootstrap-1.22.0.jar:/opt/nifi/nifi-current/./lib/nifi-api-1.22.0.jar:/opt/nifi/nifi-current/./lib/nifi-runtime-1.22.0.jar:/opt/nifi/nifi-current/./lib/nifi-framework-api-1.22.0.jar:/opt/nifi/nifi-current/./lib/nifi-properties-1.22.0.jar:/opt/nifi/nifi-current/./lib/jul-to-slf4j-2.0.7.jar:/opt/nifi/nifi-current/./lib/jcl-over-slf4j-2.0.7.jar:/opt/nifi/nifi-current/./lib/slf4j-api-2.0.7.jar:/opt/nifi/nifi-current/./lib/nifi-nar-utils-1.22.0.jar:/opt/nifi/nifi-current/./lib/logback-core-1.3.6.jar:/opt/nifi/nifi-current/./lib/log4j-over-slf4j-2.0.7.jar:/opt/nifi/nifi-current/./lib/java11/jakarta.activation-api-1.2.2.jar:/opt/nifi/nifi-current/./lib/java11/jakarta.xml.bind-api-2.3.3.jar:/opt/nifi/nifi-current/./lib/java11/istack-commons-runtime-3.0.12.jar:/opt/nifi/nifi-current/./lib/java11/txw2-2.3.5.jar:/opt/nifi/nifi-current/./lib/java11/jaxb-runtime-2.3.5.jar:/opt/nifi/nifi-current/./lib/java11/jakarta.activation-1.2.2.jar:/opt/nifi/nifi-current/./lib/java11/javax.annotation-api-1.3.2.jar -Dorg.apache.jasper.compiler.disablejsr199=true -Xmx4g -Xms4g -Djava.security.egd=file:/dev/urandom -Dsun.net.http.allowRestrictedHeaders=true -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Djava.protocol.handler.pkgs=sun.net.www.protocol -Dnifi.properties.file.path=/opt/nifi/nifi-current/./conf/nifi.properties -Dnifi.bootstrap.listen.port=42147 -Dapp=NiFi -Dorg.apache.nifi.bootstrap.config.log.dir=/opt/nifi/nifi-current/logs org.apache.nifi.NiFi
+2024-03-19 02:39:00,033 INFO [main] org.apache.nifi.bootstrap.Command Launched Apache NiFi with Process ID 44
+2024-03-19 02:39:00,752 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,251 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.3.6
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,298 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,298 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/opt/nifi/nifi-current/conf/logback.xml]
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,605 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1710815940605)
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,606 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Will scan for changes in [file:/opt/nifi/nifi-current/conf/logback.xml]
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,606 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandler - Setting ReconfigureOnChangeTask scanning period to 30 seconds
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,610 |-WARN in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - ch.qos.logback.core.hook.DelayingShutdownHook was renamed as ch.qos.logback.core.hook.DefaultShutdownHook
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,610 |-WARN in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Please use the new class name
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,610 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+2024-03-19 02:39:00,753 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,611 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Registering shutdown hook with JVM runtime.
+2024-03-19 02:39:00,754 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,612 |-INFO in ch.qos.logback.classic.model.processor.LoggerContextListenerModelHandler - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+2024-03-19 02:39:00,754 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,631 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+2024-03-19 02:39:00,754 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,632 |-INFO in ch.qos.logback.classic.model.processor.LoggerContextListenerModelHandler - Starting LoggerContextListener
+2024-03-19 02:39:00,758 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,634 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [APP_FILE]
+2024-03-19 02:39:00,760 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,634 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-03-19 02:39:00,761 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,647 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1353170030 - Archive files will be limited to [100 MB] each.
+2024-03-19 02:39:00,761 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,665 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1353170030 - No compression will be used
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,666 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1353170030 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-app_%d{yyyy-MM-dd_HH}.%i.log for the active file
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,691 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@161b062a - The date pattern is 'yyyy-MM-dd_HH' from file name pattern '/opt/nifi/nifi-current/logs/nifi-app_%d{yyyy-MM-dd_HH}.%i.log'.
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,691 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@161b062a - Roll-over at the top of every hour.
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,696 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@161b062a - Setting initial period to 2024-03-19T02:34:18.936Z
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,719 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[APP_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-app.log
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,719 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[APP_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-app.log]
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,720 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [USER_FILE]
+2024-03-19 02:39:00,762 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,720 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,720 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@398572781 - No compression will be used
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,720 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@398572781 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-user_%d.log for the active file
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,722 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-user_%d.log'.
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,722 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,722 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:34:15.635Z
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,723 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[USER_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-user.log
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,723 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[USER_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-user.log]
+2024-03-19 02:39:00,763 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,723 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [REQUEST_FILE]
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,723 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,723 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@765284253 - No compression will be used
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,724 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@765284253 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-request_%d.log for the active file
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,724 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-request_%d.log'.
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,724 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,725 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:34:15.679Z
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,725 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-request.log
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,725 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-request.log]
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,725 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [BOOTSTRAP_FILE]
+2024-03-19 02:39:00,764 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,725 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,726 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1077199500 - No compression will be used
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,726 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1077199500 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-bootstrap_%d.log for the active file
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,726 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-bootstrap_%d.log'.
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,726 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,727 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2024-03-19T02:39:00.032Z
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[BOOTSTRAP_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-bootstrap.log
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,727 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[BOOTSTRAP_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-bootstrap.log]
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,727 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [DEPRECATION_FILE]
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,727 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+2024-03-19 02:39:00,765 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,728 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@240166646 - setting totalSizeCap to 100 MB
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,728 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@240166646 - Archive files will be limited to [10 MB] each.
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,728 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@240166646 - No compression will be used
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,728 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@240166646 - Will use the pattern /opt/nifi/nifi-current/logs/nifi-deprecation_%d.%i.log for the active file
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,729 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@14ec4505 - The date pattern is 'yyyy-MM-dd' from file name pattern '/opt/nifi/nifi-current/logs/nifi-deprecation_%d.%i.log'.
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,729 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@14ec4505 - Roll-over at midnight.
+2024-03-19 02:39:00,766 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,729 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@14ec4505 - Setting initial period to 2024-03-15T22:20:33.914Z
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,731 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[DEPRECATION_FILE] - Active log file name: /opt/nifi/nifi-current/logs/nifi-deprecation.log
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,731 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[DEPRECATION_FILE] - File property is set to [/opt/nifi/nifi-current/logs/nifi-deprecation.log]
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,731 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,731 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,734 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [deprecation] to WARN
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,734 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[deprecation] onto the JUL framework
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,734 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [deprecation] to false
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,734 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [DEPRECATION_FILE] to Logger[deprecation]
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,735 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi] to INFO
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,735 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi] onto the JUL framework
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors] to WARN
+2024-03-19 02:39:00,767 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[org.apache.nifi.processors] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors.standard.LogAttribute] to INFO
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.processors.standard.LogAttribute] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.processors.standard.LogMessage] to INFO
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.processors.standard.LogMessage] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.controller.repository.StandardProcessSession] to WARN
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,736 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[org.apache.nifi.controller.repository.StandardProcessSession] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.ClientCnxn] to ERROR
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.ClientCnxn] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NIOServerCnxn] to ERROR
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.server.NIOServerCnxn] onto the JUL framework
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NIOServerCnxnFactory] to ERROR
+2024-03-19 02:39:00,768 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.server.NIOServerCnxnFactory] onto the JUL framework
+2024-03-19 02:39:00,769 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.NettyServerCnxnFactory] to ERROR
+2024-03-19 02:39:00,769 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.server.NettyServerCnxnFactory] onto the JUL framework
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.quorum] to ERROR
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.server.quorum] onto the JUL framework
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.ZooKeeper] to ERROR
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,737 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.ZooKeeper] onto the JUL framework
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.zookeeper.server.PrepRequestProcessor] to ERROR
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.zookeeper.server.PrepRequestProcessor] onto the JUL framework
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.controller.reporting.LogComponentStatuses] to ERROR
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.nifi.controller.reporting.LogComponentStatuses] onto the JUL framework
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.calcite.runtime.CalciteException] to OFF
+2024-03-19 02:39:00,770 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating OFF level on Logger[org.apache.calcite.runtime.CalciteException] onto the JUL framework
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.curator.framework.recipes.leader.LeaderSelector] to OFF
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating OFF level on Logger[org.apache.curator.framework.recipes.leader.LeaderSelector] onto the JUL framework
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.curator.ConnectionState] to OFF
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating OFF level on Logger[org.apache.curator.ConnectionState] onto the JUL framework
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.cluster] to INFO
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,738 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.cluster] onto the JUL framework
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,739 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.server.JettyServer] to INFO
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,739 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.server.JettyServer] onto the JUL framework
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,739 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty] to INFO
+2024-03-19 02:39:00,771 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,739 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.eclipse.jetty] onto the JUL framework
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to ERROR
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.springframework] onto the JUL framework
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to INFO
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.springframework.security] onto the JUL framework
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.glassfish.jersey.internal.Errors] to ERROR
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,740 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.glassfish.jersey.internal.Errors] onto the JUL framework
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.annotations.AnnotationParser] to ERROR
+2024-03-19 02:39:00,772 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.eclipse.jetty.annotations.AnnotationParser] onto the JUL framework
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [net.schmizz.sshj] to WARN
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[net.schmizz.sshj] onto the JUL framework
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.hierynomus.sshj] to WARN
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[com.hierynomus.sshj] onto the JUL framework
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.hierynomus.smbj] to WARN
+2024-03-19 02:39:00,773 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[com.hierynomus.smbj] onto the JUL framework
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.amazonaws.services.kinesis] to WARN
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[com.amazonaws.services.kinesis] onto the JUL framework
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.atlas] to WARN
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,741 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[org.apache.atlas] onto the JUL framework
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.security.requests] to INFO
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.web.security.requests] onto the JUL framework
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.security.requests] to false
+2024-03-19 02:39:00,776 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [APP_FILE] to Logger[org.apache.nifi.web.security.requests]
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.security] to INFO
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.web.security] onto the JUL framework
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.security] to false
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.security]
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.api.config] to INFO
+2024-03-19 02:39:00,777 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.web.api.config] onto the JUL framework
+2024-03-19 02:39:00,786 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.api.config] to false
+2024-03-19 02:39:00,787 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.api.config]
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.authorization] to INFO
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.authorization] onto the JUL framework
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.authorization] to false
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,742 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.authorization]
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.cluster.authorization] to INFO
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.cluster.authorization] onto the JUL framework
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.cluster.authorization] to false
+2024-03-19 02:39:00,791 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.cluster.authorization]
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.api.AccessResource] to INFO
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.web.api.AccessResource] onto the JUL framework
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.api.AccessResource] to false
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.apache.nifi.web.api.AccessResource]
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.opensaml] to WARN
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating WARN level on Logger[org.opensaml] onto the JUL framework
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.opensaml] to false
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [USER_FILE] to Logger[org.opensaml]
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.web.server.RequestLog] to INFO
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.web.server.RequestLog] onto the JUL framework
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.web.server.RequestLog] to false
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [REQUEST_FILE] to Logger[org.apache.nifi.web.server.RequestLog]
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.bootstrap] to INFO
+2024-03-19 02:39:00,792 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,743 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.bootstrap] onto the JUL framework
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.bootstrap] to false
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.bootstrap]
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.bootstrap]
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.bootstrap.Command] to INFO
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.bootstrap.Command] onto the JUL framework
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.bootstrap.Command] to false
+2024-03-19 02:39:00,793 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.bootstrap.Command]
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.bootstrap.Command]
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.StdOut] to INFO
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[org.apache.nifi.StdOut] onto the JUL framework
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.StdOut] to false
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.StdOut]
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.StdOut]
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.nifi.StdErr] to ERROR
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,744 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating ERROR level on Logger[org.apache.nifi.StdErr] onto the JUL framework
+2024-03-19 02:39:00,794 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.apache.nifi.StdErr] to false
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.apache.nifi.StdErr]
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [BOOTSTRAP_FILE] to Logger[org.apache.nifi.StdErr]
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@691a7f8f - Propagating INFO level on Logger[ROOT] onto the JUL framework
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [APP_FILE] to Logger[ROOT]
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,745 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@53ca01a2 - End of configuration.
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 02:39:00,746 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@358c99f5 - Registering current configuration as safe fallback point
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut
+2024-03-19 02:39:00,795 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:00,755 INFO [main] org.apache.nifi.NiFi Launching NiFi...
+2024-03-19 02:39:00,885 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:00,883 INFO [main] o.a.nifi.properties.NiFiPropertiesLoader Loading Application Properties [/opt/nifi/nifi-current/./conf/nifi.properties]
+2024-03-19 02:39:00,895 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:00,895 INFO [main] org.apache.nifi.NiFi Application Properties loaded [135]
+2024-03-19 02:39:01,031 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:01,030 INFO [main] org.apache.nifi.BootstrapListener Started Bootstrap Listener, Listening for incoming requests on port 35635
+2024-03-19 02:39:01,052 INFO [NiFi Bootstrap Command Listener] org.apache.nifi.bootstrap.RunNiFi Apache NiFi now running and listening for Bootstrap requests on port 35635
+2024-03-19 02:39:01,053 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:01,052 INFO [main] org.apache.nifi.BootstrapListener Successfully initiated communication with Bootstrap
+2024-03-19 02:39:01,087 INFO [NiFi logging handler] org.apache.nifi.StdOut 2024-03-19 02:39:01,087 INFO [main] org.apache.nifi.nar.NarUnpacker Expanding 130 NAR files with all processors...
