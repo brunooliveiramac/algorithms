@@ -1,5 +1,6 @@
 FROM golang:1.22.0-alpine3.19 as base
 ENV DOCKER_CONTENT_TRUST=1
+
 FROM base as build
 WORKDIR /app
 COPY . /app/
