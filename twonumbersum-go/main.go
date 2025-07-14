@@ -18,6 +18,7 @@ package main
 //[-1, 11] // the numbers could be in reverse order
 
 // O(n²)
+// brute force
 func TwoNumberSum(array []int, target int) []int {
 	sum := make([]int, 0)
 out:
@@ -33,6 +34,23 @@ out:
 		}
 	}
 	return sum
+}
+
+// o(n) time
+// o(n) space
+func TwoSum(nums []int, taget int) []int {
+	prevMap := make(map[int]int)
+
+	for i, n := range nums {
+		diff := taget - n
+		if j, found := prevMap[diff]; found {
+			return []int{j, i}
+		}
+		// n = value
+		// i = index
+		prevMap[n] = i
+	}
+	return []int{}
 }
 
 func main() {
