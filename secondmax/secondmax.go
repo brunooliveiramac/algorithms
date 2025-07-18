@@ -1,0 +1,5 @@
+package secondmax
+
+func main() {
+
+}
