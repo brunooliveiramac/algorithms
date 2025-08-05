@@ -1,0 +1,28 @@
+# 1GB MeM
+# Read a file with 10GB with randon numbers per line
+
+# Input: file path containing the file with the randon numbers
+# Output: file path with the sorted numbers
+
+
+func readFile(string FilePath) string FilePath {
+    check := chucker(FilePath, 10, 1GB)
+
+
+}
+
+step 1: divide the file in 10 chuncks
+step 2: sort individual chuncks
+step 3: interate over the chunks sorted and append into the output file
+
+1: 1,2,3
+2: -1,10,1000
+3: -10,0,10000
+
+
+-----
+1: -10,-1,0
+
+
+
+
