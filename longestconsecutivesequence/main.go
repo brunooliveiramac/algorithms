@@ -1,29 +1,28 @@
 package main
 
-import "sort"
-
 func longestConsecutive(nums []int) int {
-	sort.Ints(nums)
-	var result []int
-
-	for i := range nums {
-		if i+1 <= len(nums)-1 {
-			if (nums[i+1] - nums[i]) == 0 {
-				continue
-			}
-		}
-
-		result = append(result, nums[i])
-
-		if i+1 > len(nums)-1 {
-			break
-		}
-		if (nums[i+1] - nums[i]) > 1 {
-			break
-		}
+	numSet := make(map[int]struct{})
+	for _, num := range nums {
+		numSet[num] = struct{}{}
 	}
 
-	return len(result)
+	longest := 0
+	for num := range numSet {
+		if _, found := numSet[num-1]; !found {
+			length := 1
+			for {
+				if _, exists := numSet[num+length]; exists {
+					length++
+				} else {
+					break
+				}
+			}
+			if length > longest {
+				longest = length
+			}
+		}
+	}
+	return longest
 }
 
 func main() {
